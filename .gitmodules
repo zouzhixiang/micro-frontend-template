@@ -2,3 +2,7 @@
 	path = packages/main
 	url = git@github.com:zouzhixiang/micro-frontend-template.git
 	branch = monorepo-gitmodules-main
+[submodule "packages/vue2"]
+	path = packages/vue2
+	url = git@github.com:zouzhixiang/micro-frontend-template.git
+	branch = monorepo-gitmodules-vue2
