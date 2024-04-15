@@ -16,7 +16,6 @@ Vue.use(TDesign).use(WujieVue)
 Vue.config.productionTip = false
 
 const { setupApp, bus } = WujieVue
-setupApp({ name: 'base', url: '/base', exec: true, alive: false, ...lifecycles })
 setupApp({ name: 'vue2', url: '/vue2', exec: true, alive: false, ...lifecycles })
 
 bus.$on('module-route-change', (module, route) => {
