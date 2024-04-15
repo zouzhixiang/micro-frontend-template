@@ -1,0 +1,46 @@
+{
+  "name": "monorepo-gitmodules",
+  "private": true,
+  "packageManager": "pnpm@7.33.5",
+  "version": "0.1.0",
+  "description": "monorepo gitmodules micro-frontend",
+  "keywords": [
+    "monorepo",
+    "wujie",
+    "gitmodules",
+    "micro-frontend"
+  ],
+  "author": "zouzhixiang",
+  "license": "MIT",
+  "scripts": {
+    "serve": "concurrently \"pnpm run -C packages/main serve\" \"pnpm run -C packages/vue2 serve\"",
+    "build": "concurrently \"pnpm run -C packages/main build\" \"pnpm run -C packages/vue2 build\"",
+    "release": "standard-version -a"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "downloadjs": "^1.4.7",
+    "js-cookie": "^3.0.5",
+    "jsencrypt": "^3.3.2",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "print-js": "^1.6.0",
+    "qs": "^6.11.2",
+    "secure-ls": "^1.2.6",
+    "throttle-debounce": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.22.9",
+    "@babel/eslint-parser": "7.22.9",
+    "@babel/preset-env": "7.22.9",
+    "concurrently": "^8.2.2",
+    "eslint": "8.45.0",
+    "mockjs": "^1.1.0",
+    "standard-version": "^9.5.0"
+  }
+}
