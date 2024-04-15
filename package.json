@@ -1,0 +1,41 @@
+{
+  "name": "@mono/main",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "author": "zouzhixiang",
+  "license": "MIT",
+  "scripts": {
+    "app1": "vue-cli-service serve --mode app1.dev",
+    "build:app1": "vue-cli-service build --mode app1.prod",
+    "app2": "vue-cli-service serve --mode app2.dev",
+    "build:app2": "vue-cli-service build --mode app2.prod"
+  },
+  "dependencies": {
+    "@mono/base": "workspace:*",
+    "tdesign-icons-vue": "^0.2.2",
+    "tdesign-vue": "1.9.0-naruto",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
+    "vuex-persistedstate": "^3.1.0",
+    "wujie-vue2": "^1.0.22"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
