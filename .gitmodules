@@ -1,0 +1,4 @@
+[submodule "packages/main"]
+	path = packages/main
+	url = git@github.com:zouzhixiang/micro-frontend-template.git
+	branch = monorepo-gitmodules-main
