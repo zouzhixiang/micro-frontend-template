@@ -1,0 +1,12 @@
+/* themes file
+-------------------------- */
+$--default-theme: light;
+
+$themes: (
+  light: (color-primary: #4797c7),
+  dark: (color-primary: #2aafff)
+);
+
+:export {
+  defaultTheme: $--default-theme;
+}

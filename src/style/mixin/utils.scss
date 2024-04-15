@@ -1,0 +1,39 @@
+@mixin container($overflow: hidden) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: $overflow;
+}
+
+@mixin flex-vertical {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@mixin block-bg($padding: $--content-space-base) {
+  padding: $padding;
+
+  background-color: var(--td-bg-color-container);
+  box-shadow: var(--td-bg-shadow-color);
+  border-radius: 4px;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
