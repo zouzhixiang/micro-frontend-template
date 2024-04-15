@@ -1,0 +1,30 @@
+.el-timeline-item__tail {
+  border-left: 2px solid var(--td-border-level-2-color);
+}
+.el-timeline-item__icon {
+  color: var(--td-font-white-1);
+}
+.el-timeline-item__node {
+  background-color: var(--td-bg-color-component);
+}
+.el-timeline-item__node--primary {
+  background-color: var(--td-brand-color);
+}
+.el-timeline-item__node--success {
+  background-color: var(--td-success-color);
+}
+.el-timeline-item__node--warning {
+  background-color: var(--td-warning-color);
+}
+.el-timeline-item__node--danger {
+  background-color: var(--td-error-color);
+}
+.el-timeline-item__node--info {
+  background-color: var(--td-bg-color-component);
+}
+.el-timeline-item__content {
+  color: var(--td-text-color-primary);
+}
+.el-timeline-item__timestamp {
+  color: var(--td-text-color-secondary);
+}

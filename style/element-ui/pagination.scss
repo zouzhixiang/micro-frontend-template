@@ -1,0 +1,211 @@
+.el-pagination {
+  white-space: nowrap;
+  padding: 7px 5px;
+  color: var(--td-text-color-secondary);
+  font-weight: 700;
+}
+
+.el-pagination button {
+  display: inline-block;
+  font-size: 14px;
+  min-width: 22px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  padding: 0 4px;
+}
+
+.el-pagination button:hover {
+  color: var(--td-brand-color);
+}
+.el-pagination button:disabled {
+  color: var(--td-text-color-disabled);
+  background-color: var(--td-bg-color-specialcomponent);
+}
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+  background: center center no-repeat var(--td-bg-color-specialcomponent);
+  background-size: 16px;
+  cursor: pointer;
+  margin: 0;
+  color: var(--td-text-color-secondary);
+  border: 1px solid var(--td-border-level-2-color);
+  border-radius: 2px;
+}
+.el-pagination .btn-next .el-icon,
+.el-pagination .btn-prev .el-icon {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+}
+.el-pagination .btn-prev {
+  padding-right: 4px;
+}
+.el-pagination .btn-next {
+  padding-left: 4px;
+}
+.el-pagination .el-pager li.disabled {
+  color: var(--td-text-color-disabled);
+  cursor: not-allowed;
+}
+.el-pager li,
+.el-pager li.btn-quicknext:hover,
+.el-pager li.btn-quickprev:hover {
+  cursor: pointer;
+}
+.el-pagination--small .btn-next,
+.el-pagination--small .btn-prev,
+.el-pagination--small .el-pager li,
+.el-pagination--small .el-pager li.btn-quicknext,
+.el-pagination--small .el-pager li.btn-quickprev,
+.el-pagination--small .el-pager li:last-child {
+  // border-color: transparent;
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+  min-width: 22px;
+}
+
+.el-pagination--small .more::before,
+.el-pagination--small li.more::before {
+  line-height: 24px;
+}
+.el-pagination--small button,
+.el-pagination--small span:not([class*='suffix']) {
+  height: 22px;
+  line-height: 22px;
+}
+.el-pagination--small .el-pagination__editor,
+.el-pagination--small .el-pagination__editor.el-input .el-input__inner {
+  height: 22px;
+}
+.el-pagination__sizes {
+  margin: 0 10px 0 0;
+  font-weight: 400;
+  color: var(--td-text-color-secondary);
+}
+.el-pagination__sizes .el-input .el-input__inner {
+  font-size: 13px;
+  padding-left: 8px;
+}
+.el-pagination__sizes .el-input .el-input__inner:hover {
+  border-color: var(--td-brand-color);
+}
+.el-pagination__total {
+  margin-right: 10px;
+  font-weight: 400;
+  color: var(--td-text-color-secondary);
+}
+.el-pagination__jump {
+  margin-left: 24px;
+  font-weight: 400;
+  color: var(--td-text-color-secondary);
+}
+.el-pagination__jump .el-input__inner {
+  padding: 0 3px;
+}
+.el-pagination__rightwrapper {
+  float: right;
+}
+.el-pagination__editor {
+  line-height: 18px;
+  padding: 0 2px;
+  height: 28px;
+  text-align: center;
+  margin: 0 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.el-pager,
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev {
+  padding: 0;
+}
+.el-pagination__editor.el-input {
+  width: 50px;
+}
+.el-pagination__editor.el-input .el-input__inner {
+  height: 28px;
+}
+.el-pagination__editor .el-input__inner::-webkit-inner-spin-button,
+.el-pagination__editor .el-input__inner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  margin: 0 5px;
+  background-color: var(--td-bg-color-component);
+  color: var(--td-text-color-secondary);
+  min-width: 22px;
+  border-radius: 2px;
+}
+.el-pagination.is-background .btn-next.disabled,
+.el-pagination.is-background .btn-next:disabled,
+.el-pagination.is-background .btn-prev.disabled,
+.el-pagination.is-background .btn-prev:disabled,
+.el-pagination.is-background .el-pager li.disabled {
+  color: var(--td-text-color-disabled);
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: var(--td-brand-color);
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: var(--td-brand-color);
+  color: var(--td-font-white-1);
+}
+.el-pagination.is-background.el-pagination--small .btn-next,
+.el-pagination.is-background.el-pagination--small .btn-prev,
+.el-pagination.is-background.el-pagination--small .el-pager li {
+  margin: 0 3px;
+  min-width: 22px;
+}
+.el-pager,
+.el-pager li {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+}
+
+.el-pager .more::before {
+  line-height: 22px;
+}
+.el-pager {
+  height: 28px;
+  line-height: 28px;
+}
+.el-pager li {
+  padding: 0 2px;
+  background: var(--td-bg-color-specialcomponent);
+  margin: 0 4px;
+  font-size: 14px;
+  min-width: 22px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 2px;
+}
+.el-pager li.btn-quicknext,
+.el-pager li.btn-quickprev {
+  line-height: 22px;
+  color: var(--td-text-color-secondary);
+}
+.el-pager li.btn-quicknext.disabled,
+.el-pager li.btn-quickprev.disabled {
+  color: var(--td-text-color-disabled);
+}
+
+.el-pager li:hover {
+  color: var(--td-brand-color);
+}
+.el-pager li.active {
+  background: var(--td-brand-color);
+  color: var(--td-font-white-1);
+  cursor: default;
+}
+
+.el-pagination__sizes .el-input--mini .el-input__inner {
+  height: 28px;
+  line-height: 28px;
+}

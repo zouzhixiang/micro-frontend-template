@@ -1,0 +1,61 @@
+.el-step__head.is-process {
+  color: var(--td-text-color-primary);
+  border-color: var(--td-text-color-primary);
+}
+.el-step__head.is-wait {
+  color: var(--td-text-color-disabled);
+  border-color: var(--td-text-color-disabled);
+}
+.el-step__head.is-success {
+  color: var(--td-success-color);
+  border-color: var(--td-success-color);
+}
+.el-step__head.is-error {
+  color: var(--td-error-color);
+  border-color: var(--td-error-color);
+}
+.el-step__head.is-finish {
+  color: var(--td-brand-color);
+  border-color: var(--td-brand-color);
+}
+.el-step__line {
+  background-color: var(--td-text-color-disabled);
+}
+.el-step__title.is-process {
+  color: var(--td-text-color-primary);
+}
+.el-step__title.is-wait {
+  color: var(--td-text-color-disabled);
+}
+.el-step__title.is-success {
+  color: var(--td-success-color);
+}
+.el-step__title.is-error {
+  color: var(--td-error-color);
+}
+.el-step__title.is-finish {
+  color: var(--td-brand-color);
+}
+.el-step__description.is-process {
+  color: var(--td-text-color-primary);
+}
+.el-step__description.is-wait {
+  color: var(--td-text-color-disabled);
+}
+.el-step__description.is-success {
+  color: var(--td-success-color);
+}
+.el-step__description.is-error {
+  color: var(--td-error-color);
+}
+.el-step__description.is-finish {
+  color: var(--td-brand-color);
+}
+.el-step.is-simple .el-step__arrow::after,
+.el-step.is-simple .el-step__arrow::before {
+  background: var(--td-text-color-disabled);
+}
+
+.el-steps--simple {
+  background: var(--td-bg-color-component);
+}

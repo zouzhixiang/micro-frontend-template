@@ -1,0 +1,42 @@
+.el-color-predefine__color-selector.selected {
+  -webkit-box-shadow: 0 0 3px 2px var(--td-brand-color);
+  box-shadow: 0 0 3px 2px var(--td-brand-color);
+}
+
+.el-color-dropdown__value {
+  color: var(--td-text-color-primary);
+}
+.el-color-dropdown__btn {
+  border: 1px solid var(--td-border-level-2-color);
+  color: var(--td-text-color-primary);
+}
+.el-color-dropdown__btn[disabled] {
+  color: var(--td-text-color-disabled);
+}
+.el-color-dropdown__btn:hover {
+  color: var(--td-brand-color);
+  border-color: var(--td-brand-color);
+}
+.el-color-dropdown__link-btn {
+  color: var(--td-brand-color);
+}
+.el-color-dropdown__link-btn:hover {
+  color: var(--td-brand-color);
+  opacity: 0.8;
+}
+.el-color-picker__trigger {
+  border: 1px solid var(--td-border-level-2-color);
+}
+.el-color-picker__color {
+  border: 1px solid var(--td-border-level-3-color);
+}
+.el-color-picker__empty {
+  color: var(--td-text-color-regular);
+}
+.el-color-picker__icon {
+  color: var(--td-text-color-anti);
+}
+.el-color-picker__panel {
+  background-color: var(--td-bg-color-specialcomponent);
+  border: 1px solid var(--td-border-level-2-color);
+}

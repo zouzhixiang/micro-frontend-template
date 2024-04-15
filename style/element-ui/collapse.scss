@@ -1,0 +1,22 @@
+.el-collapse {
+  border-top: 1px solid var(--td-border-level-2-color);
+  border-bottom: 1px solid var(--td-border-level-2-color);
+}
+.el-collapse-item.is-disabled .el-collapse-item__header {
+  color: var(--td-text-color-disabled);
+}
+.el-collapse-item__header {
+  background-color: var(--td-bg-color-specialcomponent);
+  color: var(--td-text-color-primary);
+  border-bottom: 1px solid var(--td-border-level-2-color);
+}
+.el-collapse-item__header.focusing:focus:not(:hover) {
+  color: var(--td-brand-color);
+}
+.el-collapse-item__wrap {
+  background-color: var(--td-bg-color-specialcomponent);
+  border-bottom: 1px solid var(--td-border-level-2-color);
+}
+.el-collapse-item__content {
+  color: var(--td-text-color-primary);
+}

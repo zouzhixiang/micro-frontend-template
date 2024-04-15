@@ -1,0 +1,21 @@
+.el-badge__content {
+  background-color: var(--td-error-color);
+  color: var(--td-bg-color-specialcomponent);
+  border: 1px solid var(--td-bg-color-specialcomponent);
+}
+
+.el-badge__content--primary {
+  background-color: var(--td-brand-color);
+}
+.el-badge__content--success {
+  background-color: var(--td-success-color);
+}
+.el-badge__content--warning {
+  background-color: var(--td-warning-color);
+}
+.el-badge__content--info {
+  background-color: var(--td-bg-color-component);
+}
+.el-badge__content--danger {
+  background-color: var(--td-error-color);
+}

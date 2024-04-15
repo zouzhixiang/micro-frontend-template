@@ -1,0 +1,11 @@
+.el-popover {
+  background: var(--td-bg-color-specialcomponent);
+  border: 1px solid var(--td-border-level-2-color);
+  color: var(--td-text-color-secondary);
+  -webkit-box-shadow: var(--td-pop-shadow-color);
+  box-shadow: var(--td-pop-shadow-color);
+}
+
+.el-popover__title {
+  color: var(--td-text-color-primary);
+}

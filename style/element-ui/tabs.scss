@@ -1,0 +1,176 @@
+.el-tabs__active-bar {
+  background-color: var(--td-brand-color);
+}
+.el-tabs__new-tab {
+  border: 1px solid var(--td-border-level-3-color);
+  color: var(--td-gray-color-9);
+}
+
+.el-tabs__new-tab:hover {
+  color: var(--td-brand-color);
+}
+
+.el-tabs__nav-wrap::after {
+  // background-color: var(--td-gray-color-9);
+  background-color: transparent;
+  border-bottom: 1px solid var(--td-gray-color-9);
+}
+
+.el-tabs__nav-next,
+.el-tabs__nav-prev {
+  color: var(--td-text-color-regular);
+}
+.el-tabs__item {
+  color: var(--td-text-color-secondary);
+  font-size: var(--td-font-size-body-large);
+}
+
+.el-tabs__item:focus.is-active.is-focus:not(:active) {
+  -webkit-box-shadow: 0 0 2px 2px var(--td-brand-color) inset;
+  box-shadow: 0 0 2px 2px var(--td-brand-color) inset;
+}
+.el-tabs__item .el-icon-close:hover {
+  background-color: var(--td-text-color-disabled);
+  color: var(--td-font-white-1);
+}
+.el-tabs__item.is-active {
+  color: var(--td-brand-color);
+}
+.el-tabs__item:hover {
+  color: var(--td-brand-color);
+}
+.el-tabs__item.is-disabled {
+  color: var(--td-text-color-disabled);
+}
+.el-tabs--card > .el-tabs__header {
+  border-bottom: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: 1px solid var(--td-border-level-2-color);
+  border-bottom: none;
+}
+.el-tabs--card > .el-tabs__header .el-tabs__item {
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  border-bottom-color: var(--td-bg-color-specialcomponent);
+}
+.el-tabs--border-card {
+  background: var(--td-bg-color-specialcomponent);
+  border: 1px solid var(--td-border-level-3-color);
+}
+.el-tabs--border-card > .el-tabs__header {
+  background-color: var(--td-bg-color-component);
+  border-bottom: 1px solid var(--td-border-level-3-color);
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item {
+  color: var(--td-text-color-secondary);
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+  color: var(--td-brand-color);
+  background-color: var(--td-bg-color-specialcomponent);
+  border-right-color: var(--td-border-level-3-color);
+  border-left-color: var(--td-border-level-3-color);
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+  color: var(--td-brand-color);
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-disabled {
+  color: var(--td-border-level-3-color);
+}
+.el-tabs--bottom.el-tabs--border-card .el-tabs__header.is-bottom {
+  border-top: 1px solid var(--td-border-level-3-color);
+}
+.el-tabs--bottom.el-tabs--border-card .el-tabs__item.is-bottom:not(.is-active) {
+  border: 1px solid transparent;
+}
+.el-tabs--left.el-tabs--card .el-tabs__item.is-left {
+  border-right: 1px solid var(--td-border-level-2-color);
+  border-top: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--left.el-tabs--card .el-tabs__item.is-left:first-child {
+  border-right: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--left.el-tabs--card .el-tabs__item.is-left.is-active {
+  border: 1px solid var(--td-border-level-2-color);
+  border-right-color: var(--td-text-color-anti);
+}
+.el-tabs--left.el-tabs--card .el-tabs__nav {
+  border-radius: 4px 0 0 4px;
+  border-bottom: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--left.el-tabs--border-card .el-tabs__header.is-left {
+  border-right: 1px solid var(--td-border-level-3-color);
+}
+.el-tabs--left.el-tabs--border-card .el-tabs__item.is-left.is-active {
+  border-color: var(--td-border-level-3-color) transparent;
+}
+.el-tabs--right.el-tabs--card .el-tabs__item.is-right {
+  border-top: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--right.el-tabs--card .el-tabs__item.is-right:first-child {
+  border-left: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--right.el-tabs--card .el-tabs__item.is-right.is-active {
+  border: 1px solid var(--td-border-level-2-color);
+  border-left-color: var(--td-text-color-anti);
+}
+.el-tabs--right.el-tabs--card .el-tabs__nav {
+  border-radius: 0 4px 4px 0;
+  border-bottom: 1px solid var(--td-border-level-2-color);
+}
+.el-tabs--right.el-tabs--border-card .el-tabs__header.is-right {
+  border-left: 1px solid var(--td-border-level-3-color);
+}
+
+.el-tabs--right.el-tabs--border-card .el-tabs__item.is-right.is-active {
+  border-color: var(--td-border-level-3-color) transparent;
+}
+
+.el-tabs.el-tabs--top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.el-tabs__content {
+  flex: 1;
+}
+.el-tab-pane {
+  height: 100%;
+  overflow: hidden;
+}
+
+.el-tabs__item .el-icon-close {
+  display: none;
+}
+
+.el-tabs__item.is-active .el-icon-close {
+  display: inline-block;
+}
+
+.el-tabs__nav-next,
+.el-tabs__nav-prev {
+  line-height: 40px;
+}
+
+.el-tabs__nav-prev .el-icon-arrow-left::before {
+  content: '\e792';
+}
+
+.el-tabs__nav-next .el-icon-arrow-right::before {
+  content: '\e791';
+}
+
+// 结合自定义class改变原有样式
+.el-tabs.tabs-right > .el-tabs__header .el-tabs__nav {
+  float: right;
+}
+
+.el-tabs__item:focus.is-active.is-focus:not(:active) {
+  box-shadow: none;
+}

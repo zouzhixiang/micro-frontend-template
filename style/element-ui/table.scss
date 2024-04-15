@@ -1,0 +1,212 @@
+.el-table,
+.el-table__expanded-cell {
+  background-color: var(--td-bg-color-specialcomponent);
+}
+.el-table {
+  color: var(--td-text-color-secondary);
+}
+
+.el-table__empty-text {
+  color: var(--td-text-color-regular);
+}
+
+.el-table__expand-icon {
+  color: var(--td-text-color-secondary);
+}
+
+.el-table thead {
+  color: var(--td-text-color-primary);
+}
+.el-table thead.is-group th,
+.el-table thead.is-group th.el-table__cell {
+  background: var(--td-bg-color-component);
+}
+
+.el-table--medium td,
+.el-table--medium th,
+.el-table--medium td.el-table__cell,
+.el-table--medium th.el-table__cell {
+  padding: 6px 0;
+}
+.el-table--small {
+  font-size: 12px;
+}
+.el-table--small td,
+.el-table--small th,
+.el-table--small td.el-table__cell,
+.el-table--small th.el-table__cell {
+  padding: 6px 0;
+}
+.el-table--mini {
+  font-size: 12px;
+}
+.el-table--mini td,
+.el-table--mini th,
+.el-table--mini td.el-table__cell,
+.el-table--mini th.el-table__cell {
+  padding: 6px 0;
+}
+.el-table th,
+.el-table th.el-table__cell {
+  background-color: var(--td-bg-color-component);
+  border-right: none;
+  padding: 6px 0;
+}
+
+.el-table tr {
+  background-color: var(--td-bg-color-specialcomponent);
+}
+
+.el-table td,
+.el-table th.is-leaf,
+.el-table td.el-table__cell,
+.el-table th.el-table__cell.is-leaf {
+  border-bottom: 1px solid var(--td-border-level-3-color);
+}
+
+.el-table th > .cell.highlight,
+.el-table th.el-table__cell > .cell.highlight {
+  color: var(--td-brand-color);
+}
+.el-table th.required > div::before,
+.el-table th.el-table__cell.required > div::before {
+  background: var(--td-error-color);
+}
+
+.el-table td,
+.el-table td.el-table__cell {
+  color: var(--td-text-color-secondary);
+  padding: 6px 0;
+}
+.el-table--border,
+.el-table--group {
+  border: 1px solid var(--td-border-level-3-color);
+}
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+  background-color: var(--td-border-level-3-color);
+  display: none;
+}
+
+.el-table--border td,
+.el-table--border td.el-table__cell,
+.el-table--border,
+.el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+  border-right: 1px solid var(--td-border-level-3-color);
+}
+
+.el-table--border th.gutter:last-of-type,
+.el-table--border th.el-table__cell.gutter:last-of-type {
+  border-bottom: 1px solid var(--td-border-level-3-color);
+}
+.el-table--border th,
+.el-table--border th.el-table__cell,
+.el-table__fixed-right-patch {
+  border-bottom: 1px solid var(--td-border-level-3-color);
+}
+
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+  background-color: var(--td-border-level-3-color);
+}
+.el-table__fixed-right-patch {
+  background-color: #fff;
+}
+
+.el-table__fixed-footer-wrapper tbody td {
+  border-top: 1px solid var(--td-border-level-3-color);
+  background-color: var(--td-bg-color-component);
+  color: var(--td-text-color-secondary);
+}
+
+.el-table__footer-wrapper td {
+  border-top: 1px solid var(--td-border-level-3-color);
+}
+
+.el-table__footer-wrapper tbody td,
+.el-table__header-wrapper tbody td {
+  background-color: var(--td-bg-color-component);
+  color: var(--td-text-color-secondary);
+}
+
+.el-table__body-wrapper .el-table--border.is-scrolling-right ~ .el-table__fixed-right {
+  border-left: 1px solid var(--td-border-level-3-color);
+}
+
+.el-table .sort-caret.ascending {
+  border-bottom-color: var(--td-text-color-regular);
+  top: 5px;
+}
+.el-table .sort-caret.descending {
+  border-top-color: var(--td-text-color-regular);
+  bottom: 7px;
+}
+.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: var(--td-brand-color);
+}
+.el-table .descending .sort-caret.descending {
+  border-top-color: var(--td-brand-color);
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td,
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background: var(--td-bg-color-secondarycontainer);
+}
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td,
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td.el-table__cell,
+.el-table--striped .el-table__body tr.el-table__row--striped.selection-row td,
+.el-table--striped .el-table__body tr.el-table__row--striped.selection-row td.el-table__cell {
+  background-color: var(--td-bg-color-secondarycontainer-active);
+}
+.el-table__body tr.hover-row.current-row > td,
+.el-table__body tr.hover-row.el-table__row--striped.current-row > td,
+.el-table__body tr.hover-row.el-table__row--striped.selection-row > td,
+.el-table__body tr.hover-row.el-table__row--striped > td,
+.el-table__body tr.hover-row.selection-row > td,
+.el-table__body tr.hover-row > td {
+  background-color: var(--td-bg-color-secondarycontainer-hover);
+}
+.el-table__body tr.current-row > td,
+.el-table__body tr.current-row > td.el-table__cell,
+.el-table__body tr.selection-row > td,
+.el-table__body tr.selection-row > td.el-table__cell {
+  background-color: var(--td-bg-color-secondarycontainer-active);
+}
+
+.el-table__column-filter-trigger i {
+  color: var(--td-text-color-regular);
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td,
+.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color: var(--td-bg-color-secondarycontainer-hover);
+}
+
+.el-table-filter {
+  border: 1px solid var(--td-border-level-2-color);
+  border-radius: 2px;
+  background-color: var(--td-bg-color-container);
+}
+
+.el-table-filter__list-item:hover {
+  background-color: var(--td-bg-color-secondarycomponent);
+  color: var(--td-text-color-brand);
+}
+.el-table-filter__list-item.is-active {
+  background-color: var(--td-brand-color);
+}
+
+.el-table-filter__bottom {
+  border-top: 1px solid var(--td-border-level-2-color);
+}
+.el-table-filter__bottom button {
+  color: var(--td-text-color-secondary);
+}
+.el-table-filter__bottom button:hover {
+  color: var(--td-brand-color);
+}
+
+.el-table-filter__bottom button.is-disabled {
+  color: var(--td-text-color-disabled);
+}

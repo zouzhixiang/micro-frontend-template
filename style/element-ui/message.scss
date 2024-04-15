@@ -1,0 +1,47 @@
+.el-message {
+  border-color: var(--td-border-level-2-color);
+  background-color: var(--td-bg-color-component);
+}
+.el-message--info .el-message__content {
+  color: var(--td-text-color-regular);
+}
+.el-message--success {
+  background-color: var(--td-success-color-light);
+  border-color: var(--td-success-color-focus);
+}
+.el-message--success .el-message__content {
+  color: var(--td-success-color);
+}
+.el-message--warning {
+  background-color: var(--td-warning-color-light);
+  border-color: var(--td-warning-color-focus);
+}
+.el-message--warning .el-message__content {
+  color: var(--td-warning-color);
+}
+.el-message--error {
+  background-color: var(--td-error-color-light);
+  border-color: var(--td-error-color-focus);
+}
+.el-message--error .el-message__content {
+  color: var(--td-error-color);
+}
+.el-message__closeBtn {
+  color: var(--td-text-color-disabled);
+}
+
+.el-message__closeBtn:hover {
+  color: var(--td-text-color-regular);
+}
+.el-message .el-icon-success {
+  color: var(--td-success-color);
+}
+.el-message .el-icon-error {
+  color: var(--td-error-color);
+}
+.el-message .el-icon-info {
+  color: var(--td-text-color-regular);
+}
+.el-message .el-icon-warning {
+  color: var(--td-warning-color);
+}

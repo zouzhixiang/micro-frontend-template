@@ -1,0 +1,22 @@
+.el-image__error,
+.el-image__placeholder {
+  background: var(--td-bg-color-component);
+}
+
+.el-image__error {
+  color: var(--td-gray-color-9);
+}
+
+.el-image-viewer__actions {
+  background-color: var(--td-text-color-secondary);
+}
+
+.el-image-viewer__next,
+.el-image-viewer__prev {
+  color: var(--td-text-color-anti);
+  background-color: var(--td-text-color-secondary);
+}
+
+.el-image-viewer__mask {
+  background: var(--td-mask-active);
+}

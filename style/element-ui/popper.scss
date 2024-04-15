@@ -1,0 +1,30 @@
+.el-popper .popper__arrow {
+  border-width: 6px;
+  -webkit-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+}
+.el-popper[x-placement^='top'] .popper__arrow {
+  border-top-color: var(--td-border-level-2-color);
+}
+.el-popper[x-placement^='top'] .popper__arrow::after {
+  border-top-color: var(--td-bg-color-specialcomponent);
+}
+
+.el-popper[x-placement^='bottom'] .popper__arrow {
+  border-bottom-color: var(--td-border-level-2-color);
+}
+.el-popper[x-placement^='bottom'] .popper__arrow::after {
+  border-bottom-color: var(--td-bg-color-specialcomponent);
+}
+.el-popper[x-placement^='right'] .popper__arrow {
+  border-right-color: var(--td-border-level-2-color);
+}
+.el-popper[x-placement^='right'] .popper__arrow::after {
+  border-right-color: var(--td-bg-color-specialcomponent);
+}
+.el-popper[x-placement^='left'] .popper__arrow {
+  border-left-color: var(--td-border-level-2-color);
+}
+.el-popper[x-placement^='left'] .popper__arrow::after {
+  border-left-color: var(--td-bg-color-specialcomponent);
+}

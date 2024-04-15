@@ -1,0 +1,227 @@
+.el-tag {
+  background-color: var(--td-brand-color-light);
+  border-color: var(--td-brand-color-light-hover);
+  color: var(--td-brand-color);
+}
+.el-tag.is-hit {
+  border-color: var(--td-brand-color);
+}
+.el-tag .el-tag__close {
+  color: var(--td-brand-color);
+}
+.el-tag .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-brand-color);
+}
+.el-tag.el-tag--info {
+  background-color: var(--td-bg-color-component);
+  border-color: var(--td-border-level-2-color);
+  color: var(--td-text-color-secondary);
+}
+.el-tag.el-tag--info.is-hit {
+  border-color: var(--td-font-gray-4);
+}
+.el-tag.el-tag--info .el-tag__close {
+  background-color: var(--td-bg-color-component);
+  color: var(--td-font-gray-4);
+}
+.el-tag.el-tag--info .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-font-gray-4);
+}
+.el-tag.el-tag--success {
+  background-color: var(--td-success-color-light);
+  border-color: var(--td-success-color-light-hover);
+  color: var(--td-success-color);
+}
+.el-tag.el-tag--success.is-hit {
+  border-color: var(--td-success-color);
+}
+.el-tag.el-tag--success .el-tag__close {
+  color: var(--td-success-color);
+}
+.el-tag.el-tag--success .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-success-color);
+}
+.el-tag.el-tag--warning {
+  background-color: var(--td-warning-color-light);
+  border-color: var(--td-warning-color-light-hover);
+  color: var(--td-warning-color);
+}
+.el-tag.el-tag--warning.is-hit {
+  border-color: var(--td-warning-color);
+}
+.el-tag.el-tag--warning .el-tag__close {
+  color: var(--td-warning-color);
+}
+.el-tag.el-tag--warning .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-warning-color);
+}
+.el-tag.el-tag--danger {
+  background-color: var(--td-error-color-light);
+  border-color: var(--td-error-color-light-hover);
+  color: var(--td-error-color);
+}
+.el-tag.el-tag--danger.is-hit {
+  border-color: var(--td-error-color);
+}
+.el-tag.el-tag--danger .el-tag__close {
+  color: var(--td-error-color);
+}
+.el-tag.el-tag--danger .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-error-color);
+}
+
+.el-tag--dark {
+  background-color: var(--td-brand-color);
+  border-color: var(--td-brand-color);
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.is-hit {
+  border-color: var(--td-brand-color);
+}
+.el-tag--dark .el-tag__close {
+  color: var(--td-font-white-1);
+}
+.el-tag--dark .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-brand-color-hover);
+}
+.el-tag--dark.el-tag--info {
+  background-color: var(--td-font-gray-4);
+  border-color: var(--td-font-gray-4);
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--info.is-hit {
+  border-color: var(--td-font-gray-4);
+}
+.el-tag--dark.el-tag--info .el-tag__close {
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--info .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-gray-color-6);
+}
+.el-tag--dark.el-tag--success {
+  background-color: var(--td-success-color);
+  border-color: var(--td-success-color);
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--success.is-hit {
+  border-color: var(--td-success-color);
+}
+.el-tag--dark.el-tag--success .el-tag__close {
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--success .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-success-color-hover);
+}
+.el-tag--dark.el-tag--warning {
+  background-color: var(--td-warning-color);
+  border-color: var(--td-warning-color);
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--warning.is-hit {
+  border-color: var(--td-warning-color);
+}
+.el-tag--dark.el-tag--warning .el-tag__close {
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--warning .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-warning-color-hover);
+}
+.el-tag--dark.el-tag--danger {
+  background-color: var(--td-error-color);
+  border-color: var(--td-error-color);
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--danger.is-hit {
+  border-color: var(--td-error-color);
+}
+.el-tag--dark.el-tag--danger .el-tag__close {
+  color: var(--td-font-white-1);
+}
+.el-tag--dark.el-tag--danger .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-error-color-hover);
+}
+.el-tag--plain {
+  background-color: var(--td-font-white-1);
+  border-color: var(--td-brand-color-hover);
+  color: var(--td-brand-color);
+}
+.el-tag--plain.is-hit {
+  border-color: var(--td-brand-color);
+}
+.el-tag--plain .el-tag__close {
+  color: var(--td-brand-color);
+}
+.el-tag--plain .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-brand-color);
+}
+.el-tag--plain.el-tag--info {
+  background-color: var(--td-font-white-1);
+  border-color: var(--td-bg-color-component-hover);
+  color: var(--td-font-gray-4);
+}
+.el-tag--plain.el-tag--info.is-hit {
+  border-color: var(--td-font-gray-4);
+}
+.el-tag--plain.el-tag--info .el-tag__close {
+  color: var(--td-font-gray-4);
+}
+.el-tag--plain.el-tag--info .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-font-gray-4);
+}
+.el-tag--plain.el-tag--success {
+  background-color: var(--td-font-white-1);
+  border-color: var(--td-success-color-hover);
+  color: var(--td-success-color);
+}
+.el-tag--plain.el-tag--success.is-hit {
+  border-color: var(--td-success-color);
+}
+.el-tag--plain.el-tag--success .el-tag__close {
+  color: var(--td-success-color);
+}
+.el-tag--plain.el-tag--success .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-success-color);
+}
+.el-tag--plain.el-tag--warning {
+  background-color: var(--td-font-white-1);
+  border-color: var(--td-warning-color-hover);
+  color: var(--td-warning-color);
+}
+.el-tag--plain.el-tag--warning.is-hit {
+  border-color: var(--td-warning-color);
+}
+.el-tag--plain.el-tag--warning .el-tag__close {
+  color: var(--td-warning-color);
+}
+.el-tag--plain.el-tag--warning .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-warning-color);
+}
+.el-tag--plain.el-tag--danger {
+  background-color: var(--td-font-white-1);
+  border-color: var(--td-error-color-hover);
+  color: var(--td-error-color);
+}
+.el-tag--plain.el-tag--danger.is-hit {
+  border-color: var(--td-error-color);
+}
+.el-tag--plain.el-tag--danger .el-tag__close {
+  color: var(--td-error-color);
+}
+.el-tag--plain.el-tag--danger .el-tag__close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-error-color);
+}

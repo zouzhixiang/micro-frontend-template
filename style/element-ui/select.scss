@@ -1,0 +1,79 @@
+.el-select {
+  width: 100%;
+}
+.el-select-dropdown {
+  border: 1px solid var(--td-border-level-2-color);
+  border-radius: 4px;
+  background-color: var(--td-bg-color-specialcomponent);
+  -webkit-box-shadow: var(--td-pop-shadow-color);
+  box-shadow: var(--td-pop-shadow-color);
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+  color: var(--td-brand-color);
+  background-color: var(--td-bg-color-specialcomponent);
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover {
+  background-color: var(--td-bg-color-secondarycontainer-hover);
+}
+
+.el-select-dropdown__empty {
+  color: var(--td-text-color-regular);
+}
+
+.el-select-dropdown__item {
+  color: var(--td-text-color-secondary);
+}
+.el-select-dropdown__item.is-disabled {
+  color: var(--td-text-color-disabled);
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: var(--td-bg-color-secondarycontainer-hover);
+}
+.el-select-dropdown__item.selected {
+  color: var(--td-brand-color);
+}
+
+.el-select-group__title {
+  color: var(--td-text-color-placeholder);
+}
+
+.el-select .el-input__inner:focus {
+  border-color: var(--td-brand-color);
+}
+.el-select .el-input .el-select__caret {
+  color: var(--td-text-color-placeholder);
+}
+.el-select .el-input .el-select__caret.is-show-close {
+  color: var(--td-text-color-placeholder);
+}
+.el-select .el-input .el-select__caret.is-show-close:hover {
+  color: var(--td-text-color-placeholder);
+}
+.el-select .el-input.is-disabled .el-input__inner:hover {
+  color: var(--td-text-color-secondary);
+}
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: var(--td-brand-color);
+}
+.el-select__input {
+  color: var(--td-text-color-secondary);
+}
+
+.el-select__close {
+  color: var(--td-text-color-placeholder);
+}
+.el-select__close:hover {
+  color: var(--td-text-color-placeholder);
+}
+.el-select .el-tag {
+  background-color: var(--td-bg-color-component);
+}
+.el-select .el-tag__close.el-icon-close {
+  background-color: var(--td-gray-color-5);
+  color: var(--td-font-gray-4);
+}
+.el-select .el-tag__close.el-icon-close:hover {
+  color: var(--td-font-white-1);
+  background-color: var(--td-font-gray-4);
+}

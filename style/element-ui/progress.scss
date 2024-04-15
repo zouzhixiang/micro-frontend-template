@@ -1,0 +1,31 @@
+.el-progress__text {
+  color: var(--td-text-color-secondary);
+}
+
+.el-progress.is-success .el-progress-bar__inner {
+  background-color: var(--td-success-color);
+}
+.el-progress.is-success .el-progress__text {
+  color: var(--td-success-color);
+}
+.el-progress.is-warning .el-progress-bar__inner {
+  background-color: var(--td-warning-color);
+}
+.el-progress.is-warning .el-progress__text {
+  color: var(--td-warning-color);
+}
+.el-progress.is-exception .el-progress-bar__inner {
+  background-color: var(--td-error-color);
+}
+.el-progress.is-exception .el-progress__text {
+  color: var(--td-error-color);
+}
+.el-progress-bar__outer {
+  background-color: var(--td-bg-color-component);
+}
+.el-progress-bar__inner {
+  background-color: var(--td-brand-color);
+}
+.el-progress-bar__innerText {
+  color: var(--td-font-white-1);
+}

@@ -1,0 +1,43 @@
+.el-transfer__button {
+  color: var(--td-font-white-1);
+  background-color: var(--td-brand-color);
+}
+.el-transfer__button.is-disabled,
+.el-transfer__button.is-disabled:hover {
+  border: 1px solid var(--td-border-level-2-color);
+  background-color: var(--td-bg-color-specialcomponent);
+  color: var(--td-text-color-disabled);
+}
+.el-transfer-panel {
+  border: 1px solid var(--td-border-level-2-color);
+  border-radius: 4px;
+  background: var(--td-bg-color-specialcomponent);
+}
+.el-transfer-panel__item.el-checkbox {
+  color: var(--td-text-color-secondary);
+}
+.el-transfer-panel__item:hover {
+  color: var(--td-brand-color);
+}
+.el-transfer-panel .el-transfer-panel__header {
+  background: var(--td-bg-color-component);
+  border-bottom: 1px solid var(--td-border-level-2-color);
+  color: var(--td-text-color-primary);
+}
+
+.el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label {
+  color: var(--td-text-color-primary);
+}
+.el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label span {
+  color: var(--td-text-color-secondary);
+}
+.el-transfer-panel .el-transfer-panel__footer {
+  background: var(--td-bg-color-specialcomponent);
+  border-top: 1px solid var(--td-border-level-2-color);
+}
+.el-transfer-panel .el-transfer-panel__footer .el-checkbox {
+  color: var(--td-text-color-secondary);
+}
+.el-transfer-panel .el-transfer-panel__empty {
+  color: var(--td-text-color-secondary);
+}

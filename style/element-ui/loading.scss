@@ -1,0 +1,13 @@
+.el-loading-mask {
+  // background-color: rgba(255, 255, 255, 0.9);
+  background-color: color-mix(in srgb, #ffffff, transparent 10%);
+}
+.el-loading-spinner .el-loading-text {
+  color: var(--td-brand-color);
+}
+.el-loading-spinner .path {
+  stroke: var(--td-brand-color);
+}
+.el-loading-spinner i {
+  color: var(--td-brand-color);
+}

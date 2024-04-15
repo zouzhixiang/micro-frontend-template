@@ -1,0 +1,9 @@
+{
+  "name": "@mono/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "author": "zouzhixiang",
+  "license": "MIT"
+}

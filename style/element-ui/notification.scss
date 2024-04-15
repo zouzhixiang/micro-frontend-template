@@ -1,0 +1,30 @@
+.el-notification {
+  border: 1px solid var(--td-border-level-1-color);
+  background-color: var(--td-bg-color-specialcomponent);
+}
+
+.el-notification__title {
+  color: var(--td-text-color-primary);
+}
+.el-notification__content {
+  color: var(--td-text-color-secondary);
+}
+
+.el-notification__closeBtn {
+  color: var(--td-gray-color-9);
+}
+.el-notification__closeBtn:hover {
+  color: var(--td-text-color-secondary);
+}
+.el-notification .el-icon-success {
+  color: var(--td-success-color);
+}
+.el-notification .el-icon-error {
+  color: var(--td-error-color);
+}
+.el-notification .el-icon-info {
+  color: var(--td-text-color-regular);
+}
+.el-notification .el-icon-warning {
+  color: var(--td-warning-color);
+}

@@ -1,0 +1,8 @@
+.el-backtop {
+  background-color: var(--td-bg-color-specialcomponent);
+  color: var(--td-brand-color);
+  box-shadow: var(--td-bg-shadow-color);
+}
+.el-backtop:hover {
+  background-color: var(--td-bg-color-secondarycontainer-hover);
+}

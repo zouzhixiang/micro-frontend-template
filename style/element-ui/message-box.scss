@@ -1,0 +1,44 @@
+.el-message-box {
+  background-color: var(--td-bg-color-specialcomponent);
+  border-radius: 4px;
+  border: 1px solid var(--td-border-level-2-color);
+  -webkit-box-shadow: var(--td-card-shadow-color);
+  box-shadow: var(--td-card-shadow-color);
+}
+
+.el-message-box__title {
+  color: var(--td-text-color-primary);
+}
+
+.el-message-box__headerbtn .el-message-box__close {
+  color: var(--td-text-color-regular);
+}
+.el-message-box__headerbtn:focus .el-message-box__close,
+.el-message-box__headerbtn:hover .el-message-box__close {
+  color: var(--td-brand-color);
+}
+.el-message-box__content {
+  color: var(--td-text-color-secondary);
+}
+
+.el-message-box__input input.invalid,
+.el-message-box__input input.invalid:focus {
+  border-color: var(--td-error-color);
+}
+
+.el-message-box__status.el-icon-success {
+  color: var(--td-success-color);
+}
+.el-message-box__status.el-icon-info {
+  color: var(--td-text-color-secondary);
+}
+.el-message-box__status.el-icon-warning {
+  color: var(--td-warning-color);
+}
+.el-message-box__status.el-icon-error {
+  color: var(--td-error-color);
+}
+
+.el-message-box__errormsg {
+  color: var(--td-error-color);
+}

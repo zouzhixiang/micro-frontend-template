@@ -1,0 +1,51 @@
+.el-form-item {
+  margin-bottom: 20px;
+}
+.el-form-item .el-form-item {
+  margin-bottom: 0;
+}
+.el-form-item--mini.el-form-item,
+.el-form-item--small.el-form-item {
+  margin-bottom: 16px;
+}
+.el-form-item--medium .el-form-item__content,
+.el-form-item--medium .el-form-item__label {
+  line-height: 36px;
+}
+.el-form-item--small .el-form-item__content,
+.el-form-item--small .el-form-item__label {
+  line-height: 32px;
+}
+.el-form-item--mini .el-form-item__content,
+.el-form-item--mini .el-form-item__label {
+  line-height: 28px;
+}
+.el-form--label-top .el-form-item__label {
+  padding: 0 0 8px;
+  line-height: 18px;
+}
+.el-form-item__label {
+  color: var(--td-text-color-primary);
+}
+.el-form-item__content {
+  line-height: 40px;
+}
+
+.el-form-item__error {
+  color: var(--td-error-color);
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before,
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before {
+  color: var(--td-error-color);
+}
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus {
+  border-color: var(--td-error-color);
+}
+
+.el-form-item.is-error .el-input__validateIcon {
+  color: var(--td-error-color);
+}

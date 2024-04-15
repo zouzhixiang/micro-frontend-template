@@ -1,0 +1,24 @@
+.el-autocomplete-suggestion {
+  box-shadow: var(--td-pop-shadow-color);
+  border: 1px solid var(--td-border-level-2-color);
+  background-color: var(--td-bg-color-specialcomponent);
+}
+.el-autocomplete-suggestion li {
+  color: var(--td-text-color-secondary);
+}
+.el-autocomplete-suggestion li.highlighted,
+.el-autocomplete-suggestion li:hover {
+  background-color: var(--td-bg-color-secondarycontainer-hover);
+}
+.el-autocomplete-suggestion li.divider {
+  margin-top: 6px;
+  border-top: 1px solid var(--td-font-gray-1);
+}
+
+.el-autocomplete-suggestion.is-loading li {
+  color: var(--td-text-color-regular);
+}
+
+.el-autocomplete-suggestion.is-loading li:hover {
+  background-color: var(--td-bg-color-specialcomponent);
+}

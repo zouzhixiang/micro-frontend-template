@@ -1,0 +1,14 @@
+.el-switch__label {
+  color: var(--td-text-color-secondary);
+}
+.el-switch__label.is-active {
+  color: var(--td-brand-color);
+}
+.el-switch__core {
+  border-color: var(--td-border-level-2-color);
+  background: var(--td-bg-color-secondarycomponent);
+}
+.el-switch.is-checked .el-switch__core {
+  border-color: var(--td-brand-color);
+  background-color: var(--td-brand-color);
+}

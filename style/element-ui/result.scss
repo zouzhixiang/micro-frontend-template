@@ -1,0 +1,18 @@
+.el-result__title p {
+  color: var(--td-text-color-primary);
+}
+.el-result__subtitle p {
+  color: var(--td-text-color-secondary);
+}
+.el-result .icon-success {
+  fill: var(--td-success-color);
+}
+.el-result .icon-error {
+  fill: var(--td-error-color);
+}
+.el-result .icon-info {
+  fill: var(--td-text-color-secondary);
+}
+.el-result .icon-warning {
+  fill: var(--td-warning-color);
+}
