@@ -58,6 +58,10 @@
     {
       "filename": "packages/main/package.json",
       "type": "json"
+    },
+    {
+      "filename": "packages/vue2/package.json",
+      "type": "json"
     }
   ]
 }

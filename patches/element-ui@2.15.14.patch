@@ -1,0 +1,28 @@
+diff --git a/lib/utils/popper.js b/lib/utils/popper.js
+index 4550020165c9dc3aa88278bb1cc9e79c0e965771..adae9e515b9f274a4ce8ec8e94b0083975a78e7f 100644
+--- a/lib/utils/popper.js
++++ b/lib/utils/popper.js
+@@ -712,7 +712,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
+             },
+             right: function right() {
+                 var left = popper.left;
+-                if (popper.right > data.boundaries.right) {
++                if (false) {
+                     left = Math.min(popper.left, data.boundaries.right - popper.width);
+                 }
+                 return { left: left };
+@@ -1188,10 +1188,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
+         }
+ 
+         var rect = {
+-            top: elementRect.top - parentRect.top,
+-            left: elementRect.left - parentRect.left,
+-            bottom: elementRect.top - parentRect.top + elementRect.height,
+-            right: elementRect.left - parentRect.left + elementRect.width,
++            top: fixed ? elementRect.top : elementRect.top - parentRect.top,
++            left: fixed ? elementRect.left : elementRect.left - parentRect.left,
++            bottom: fixed ? elementRect.top + elementRect.height : elementRect.top - parentRect.top + elementRect.height,
++            right: fixed ? elementRect.left + elementRect.width : elementRect.left - parentRect.left + elementRect.width,
+             width: elementRect.width,
+             height: elementRect.height
+         };

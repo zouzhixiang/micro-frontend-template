@@ -13,8 +13,8 @@
   "author": "zouzhixiang",
   "license": "MIT",
   "scripts": {
-    "serve": "concurrently \"pnpm run -C packages/main serve\" \"pnpm run -C packages/vue2 serve\"",
-    "build": "concurrently \"pnpm run -C packages/main build\" \"pnpm run -C packages/vue2 build\"",
+    "app1": "concurrently \"pnpm run -C packages/main app1\" \"pnpm run -C packages/vue2 serve\"",
+    "build:app1": "concurrently \"pnpm run -C packages/main build:app1\" \"pnpm run -C packages/vue2 build\"",
     "release": "standard-version -a"
   },
   "engines": {
@@ -42,5 +42,10 @@
     "eslint": "8.45.0",
     "mockjs": "^1.1.0",
     "standard-version": "^9.5.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "element-ui@2.15.14": "patches/element-ui@2.15.14.patch"
+    }
   }
 }
