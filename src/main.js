@@ -7,6 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 import '@mono/core/style/element-ui/index.scss'
+import '@mono/core/style/index.css'
 import './style/index.scss'
 
 import * as filters from '@mono/core/filters'
@@ -14,6 +15,8 @@ import * as filters from '@mono/core/filters'
 import registerDirectives from '@mono/core/directives'
 
 import axios from 'axios'
+
+import '../mock'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)

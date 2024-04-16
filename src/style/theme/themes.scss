@@ -3,8 +3,10 @@
 $--default-theme: light;
 
 $themes: (
-  light: (color-primary: #4797c7),
-  dark: (color-primary: #2aafff)
+  light: (color-primary: #4797c7,
+    color-white: #fff),
+  dark: (color-primary: #2aafff,
+    color-white: #fff)
 );
 
 :export {
