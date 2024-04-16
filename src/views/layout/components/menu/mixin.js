@@ -66,7 +66,7 @@ export default {
     setActiveMenu (id, parents) {
       this.value = id
       this.expanded = parents.map(item => item.id)
-      this.$emit('one-level-menu', parents[0].id)
+      this.$emit('one-level-menu', parents.length ? parents[0].id : id)
     }
   }
 }

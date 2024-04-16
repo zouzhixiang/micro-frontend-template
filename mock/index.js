@@ -1,7 +1,5 @@
 import Mock from 'mockjs'
 
-console.log('mock', Mock)
-
 Mock.setup({
   timeout: 200
 })
@@ -49,11 +47,31 @@ Mock.mock('/mock/getMenu', 'get', () => {
         pid: null,
         name: 'sub-app系统'
       },
+      {
+        code: 'DEMO',
+        id: '123',
+        pid: 0,
+        name: 'demo'
+      },
+      {
+        code: 'VUE2_DEMO',
+        id: '1234',
+        pid: '123',
+        name: 'vue2-demo'
+      },
+      {
+        code: 'CORE_DEMO',
+        id: '12345',
+        pid: '123',
+        name: 'core-demo'
+      },
       ...menu
     ],
-    operateList
+    operateList: [
+      'ADD',
+      ...operateList
+    ]
   }
-  console.log('menu', res)
   return responseBody(res)
 })
 
@@ -61,11 +79,11 @@ Mock.mock('/mock/getUserInfo', 'get', () => {
   const res = Mock.mock({
     user: {
       avatar: Mock.Random.image('32*32', '#50B347'),
-      username: '@string',
-      userDescription: '@cname'
+      username: '@cname',
+      userDescription: '@string'
     }
   })
-  console.log('getUserInfo', res)
+  console.log(res)
   return responseBody(res)
 })
 
@@ -80,6 +98,5 @@ Mock.mock('/mock/getConfigProp', 'get', () => {
       }
     ]
   })
-  console.log('getConfigProp', res)
   return responseBody(res)
 })

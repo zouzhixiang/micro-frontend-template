@@ -263,7 +263,7 @@ const actions = {
               commit('SET_LEAF_MENU', leafMenu)
               commit('SET_ROUTE_TREE', routeTree)
               commit('SET_REDIRECT_ROUTES', redirectRoutes)
-              commit('SET_PERMISSION_CODES', response.data.operateList.map(item => item.code))
+              commit('SET_PERMISSION_CODES', response.data.operateList)
 
               resolve(routeTree)
             } else {

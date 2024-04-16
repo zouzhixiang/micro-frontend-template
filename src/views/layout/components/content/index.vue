@@ -8,7 +8,7 @@
         <router-view :key="key"></router-view>
       </transition>
     </section>
-    <footer v-if="!fullscreen && hasCopyright">Copyright © 2003-{{ currentYear }} 浙江中控信息产业股份有限公司</footer>
+    <footer v-if="!fullscreen && hasCopyright">Copyright © 2003-{{ currentYear }} xx有限公司</footer>
   </t-content>
 </template>
 
