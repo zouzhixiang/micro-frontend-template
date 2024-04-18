@@ -1,0 +1,60 @@
+@import '../theme/themes';
+@import '../theme/handle';
+
+@mixin background-color ($color, $opacity: 1) {
+  @include themeify {
+    background-color: rgba(themed($color), $opacity);
+  }
+}
+
+@mixin background ($color) {
+  @include themeify {
+    background: themed($color);
+  }
+}
+
+@mixin font-color ($color) {
+  @include themeify {
+    color: themed($color);
+  }
+}
+
+@mixin stroke-color ($color) {
+  @include themeify {
+    color: themed($color);
+  }
+}
+
+@mixin border-color ($color, $direction: null) {
+  @if $direction ==null {
+    @include themeify {
+      border-color: themed($color);
+    }
+  }
+
+  @else {
+    @include themeify {
+      border-#{$direction}-color: themed($color);
+    }
+  }
+}
+
+@mixin border ($color, $direction: null, $width: 1px, $style: solid) {
+  @if $direction ==null {
+    @include themeify {
+      border: $width $style themed($color);
+    }
+  }
+
+  @else {
+    @include themeify {
+      border-#{$direction}: $width $style themed($color);
+    }
+  }
+}
+
+@mixin box-shadow ($color) {
+  @include themeify {
+    box-shadow: themed($color);
+  }
+}

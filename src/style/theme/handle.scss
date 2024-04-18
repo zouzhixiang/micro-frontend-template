@@ -1,0 +1,30 @@
+// @mixin themeify {
+
+//   @each $theme-name, $theme-map in $themes {
+
+//     $theme-map: $theme-map !global;
+
+//     [data-theme="#{$theme-name}"] & {
+
+//       @content;
+
+//     }
+
+//   }
+
+// }
+@mixin themeify {
+
+  @each $theme-name, $theme-map in $themes {
+
+    $theme-map: $theme-map !global;
+
+    @content;
+
+  }
+
+}
+
+@function themed ($var) {
+  @return map-get($theme-map, $var);
+}
