@@ -1,5 +1,3 @@
-### main: 基于 micro-module-main、micro-module-vue2 打包后部署的演示代码分支
-
 ### micro-module-core: 微前端公共代码分支，作为公共依赖上传至npm
 
 ### micro-module-main: 微前端主应用分支，可以单独运行
