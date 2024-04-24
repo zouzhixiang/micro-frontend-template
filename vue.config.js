@@ -3,12 +3,6 @@ module.exports = {
   outputDir: 'vue2',
   assetsDir: 'static',
   lintOnSave: true,
-  configureWebpack: {
-    externals: {
-      tiltMap: 'tiltMap'
-    },
-    devtool: 'source-map'
-  },
   css: {
     extract: true,
     loaderOptions: {
