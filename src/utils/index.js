@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import JsEncrypt from 'jsencrypt'
 import _ from 'lodash'
 
@@ -5,7 +6,7 @@ import _ from 'lodash'
  * @description 获取页面标题
  */
 export const getTitle = title => {
-  const pageTitle = process.env.VUE_APP_SYS_NAME
+  const pageTitle = Vue.prototype.name
 
   return title ? `${pageTitle} - ${title}` : pageTitle
 }

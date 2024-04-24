@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import { Icon } from 'tdesign-icons-vue'
 
 import AsideMenu from './components/menu/aside-menu'
@@ -18,7 +19,7 @@ export default {
   data () {
     return {
       iconUrl: require('@/assets/images/logo.png'),
-      systemName: process.env.VUE_APP_SYS_NAME,
+      systemName: Vue.prototype.name,
       collapsed: false,
       mainActive: ''
     }

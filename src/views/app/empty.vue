@@ -1,15 +1,8 @@
 <template>
   <div class="page">
-    <t-watermark
-      :watermark-content="{
+    <t-watermark :watermark-content="{
         text: `${systemName}(${username})`
-      }"
-      :width="120"
-      :height="60"
-      :y="120"
-      :x="80"
-      style="height: auto"
-    >
+      }" :width="120" :height="60" :y="120" :x="80" style="height: auto">
       <div class="empty">
         <i>🚧</i>
         <strong>页面建设中...</strong>
@@ -44,7 +37,7 @@ import * as themes from '@/style/theme'
 export default {
   data () {
     return {
-      systemName: process.env.VUE_APP_SYS_NAME,
+      systemName: this.name,
       themeColumns: [
         {
           title: '默认色系',
@@ -862,41 +855,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .page {
-    height: 100%;
-    margin: 0 15px;
-    padding: 20px;
-  }
-  .empty {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.page {
+  height: 100%;
+  margin: 0 15px;
+  padding: 20px;
+}
+.empty {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    i {
-      font-style: normal;
-      font-size: 60px;
-      line-height: 1.6;
-    }
-    strong {
-      font-size: 18px;
-      letter-spacing: 3px;
-    }
+  i {
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1.6;
   }
+  strong {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+}
 </style>
 <style lang="scss">
-  .t-table .custom-cell {
-    border: none;
-    white-space: nowrap;
-    word-wrap: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: var(--td-comp-paddingTB-m) var(--td-comp-paddingLR-m);
+.t-table .custom-cell {
+  border: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: var(--td-comp-paddingTB-m) var(--td-comp-paddingLR-m);
 
-    p {
-      margin: 0;
-    }
+  p {
+    margin: 0;
   }
+}
 </style>

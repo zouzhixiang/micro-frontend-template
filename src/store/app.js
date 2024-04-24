@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import {
   passwordEncrypt,
   encryptPublicKey,
@@ -216,7 +217,7 @@ const actions = {
               item => !(item.linkUrl && item.linkUrl.startsWith('PANEL_'))
             )
             const menu = _.cloneDeep(menuWithoutPanel)
-            const root = menu.find(item => item.code === process.env.VUE_APP_MENU_ROOT_CODE)
+            const root = menu.find(item => item.code === Vue.prototype.menuRootCode)
             if (root) {
               const { menuTree, leafMenu, permissions } = generateMenuTree(menu, root)
               const { permissionRoutes, emptyRouteMenu, redirectRoutes } = filterRoutes(
