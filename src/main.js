@@ -31,14 +31,14 @@ const preload = async () => {
 
 if (window.__POWERED_BY_WUJIE__) {
   let instance
-  window.__WUJIE_MOUNT = () => {
-    preload().then(() => {
+  preload().then(() => {
+    window.__WUJIE_MOUNT = () => {
       instance = new Vue({ router, store, render: h => h(App) }).$mount('#app')
-    })
-  }
-  window.__WUJIE_UNMOUNT = () => {
-    instance.$destroy()
-  }
+    }
+    window.__WUJIE_UNMOUNT = () => {
+      instance.$destroy()
+    }
+  })
 } else {
   preload().then(() => {
     new Vue({ router, store, render: h => h(App) }).$mount('#app')
