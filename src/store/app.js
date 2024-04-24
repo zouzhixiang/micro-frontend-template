@@ -208,10 +208,11 @@ const actions = {
   // 获取用户权限菜单
   getMenu ({ commit, dispatch }) {
     return new Promise((resolve, reject) => {
-      getAsyncRoutes()
-        .then(response => {
-          dispatch('getUserInfo')
-          dispatch('getConfigProp')
+      dispatch('getUserInfo')
+      dispatch('getConfigProp')
+
+      if (Vue.prototype.menuRootCode) {
+        getAsyncRoutes().then(response => {
           if (response?.data?.menu?.length) {
             const menuWithoutPanel = response.data.menu.filter(
               item => !(item.linkUrl && item.linkUrl.startsWith('PANEL_'))
@@ -274,10 +275,46 @@ const actions = {
             MessagePlugin.warning(message)
             reject(new Error(message))
           }
-        })
-        .catch(error => {
+        }).catch(error => {
           reject(error)
         })
+      } else {
+        const menu = []
+        const routes = _.cloneDeep(asyncRoutes)
+        routes.forEach((item, itemIndex) => {
+          item.children.forEach((route, routeIndex) => {
+            const id = `${itemIndex}-${routeIndex}`
+            route.meta.id = id
+            route.meta.parents = []
+            menu.push({
+              id,
+              name: route.meta.title || route.path,
+              defaultPath: `${item.path}/${route.path}`,
+              children: []
+            })
+          })
+        })
+        const routeTree = [
+          {
+            path: '/',
+            redirect: menu[0].defaultPath
+          },
+          ...routes,
+          {
+            path: '*',
+            component: ErrorView
+          }
+        ]
+        commit('SET_MENU_TREE', menu)
+        commit('SET_LEAF_MENU', menu)
+        commit('SET_ROUTE_TREE', routeTree)
+        commit('SET_PERMISSION_CODES', [])
+
+        console.log('menu', _.cloneDeep(menu))
+        console.log('routeTree', _.cloneDeep(routeTree))
+
+        resolve(routeTree)
+      }
     })
   },
   // 获取用户信息
