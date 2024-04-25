@@ -284,11 +284,11 @@ const actions = {
         routes.forEach((item, itemIndex) => {
           item.children.forEach((route, routeIndex) => {
             const id = `${itemIndex}-${routeIndex}`
-            route.meta.id = id
-            route.meta.parents = []
+            const meta = { id, parents: [], title: route.path }
+            route.meta = route.meta ? { ...meta, ...route.meta } : meta
             menu.push({
               id,
-              name: route.meta.title || route.path,
+              name: route.meta.title,
               defaultPath: `${item.path}/${route.path}`,
               children: []
             })

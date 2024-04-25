@@ -35,15 +35,16 @@ axios.get('./env.json').then(({ data: { name, menuRootCode, baseUrl, moduleApps,
 
   // 加载所有子应用路由
   bus.$on('set-module-routes', (name, publicRoutes, asyncRoutes) => {
-    loadAsyncRoutes(name, asyncRoutes)
+    if (!appLoaded.includes(name)) {
+      appLoaded.push(name)
+      loadAsyncRoutes(name, asyncRoutes)
+      if (name === mainApp) {
+        loadPublicRoutes(name, publicRoutes)
+      }
 
-    if (name === mainApp) {
-      loadPublicRoutes(name, publicRoutes)
-    }
-
-    appLoaded.push(name)
-    if (appLoaded.length === apps.length) {
-      new Vue({ router, store, render: h => h(App) }).$mount('#app')
+      if (appLoaded.length === apps.length) {
+        new Vue({ router, store, render: h => h(App) }).$mount('#app')
+      }
     }
   })
 
