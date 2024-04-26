@@ -1,14 +1,14 @@
 <template>
   <t-space :size="20" class="hc-setting" ref="hcSetting">
     <t-badge count="100">
-      <icon name="notification-error" size="24px" :style="{ color }" />
+      <notification-error-icon size="24px" :style="{ color }" />
     </t-badge>
     <t-popup :attach="popupAttach" placement="bottom-left" showArrow destroyOnClose trigger="click">
-      <icon name="setting-1" size="24px" :style="{ color }" />
+      <setting-1-icon size="24px" :style="{ color }" />
       <t-list slot="content" header="设置" size="small">
         <t-list-item>
           <t-list-item-meta title="主题">
-            <icon slot="image" name="fill-color-1" size="28px" />
+            <fill-color-1-icon slot="image" size="28px" />
             <t-radio-group slot="description" variant="primary-filled" v-model="theme" size="small" @change="themeChange">
               <t-radio-button value="darkGreen">苍绿</t-radio-button>
               <t-radio-button value="indigoBlue">靛青</t-radio-button>
@@ -17,7 +17,7 @@
         </t-list-item>
         <t-list-item>
           <t-list-item-meta title="布局">
-            <icon slot="image" name="component-layout" size="28px" />
+            <component-layout-icon slot="image" size="28px" />
             <t-radio-group slot="description" variant="primary-filled" v-model="layout" size="small" @change="layoutChange">
               <t-radio-button value="layout-classical">布局一</t-radio-button>
               <t-radio-button value="layout-haiyan">布局二</t-radio-button>
@@ -26,13 +26,13 @@
         </t-list-item>
         <t-list-item>
           <t-list-item-meta title="业务支撑平台">
-            <icon slot="image" name="system-setting" size="28px" />
+            <system-setting-icon slot="image" size="28px" />
             <t-link slot="description" theme="primary" :suffixIcon="suffixIcon" href="/honeycomb/#/platform/home" target="_blank">跳转链接</t-link>
           </t-list-item-meta>
         </t-list-item>
       </t-list>
     </t-popup>
-    <icon name="logout" size="24px" :style="{ color }" @click="handleLogout" />
+    <logout-icon size="24px" :style="{ color }" @click="handleLogout" />
     <div class="userinfo">
       <t-avatar v-if="image"></t-avatar>
       <t-avatar v-else>{{ username }}</t-avatar>
@@ -42,11 +42,19 @@
 </template>
 
 <script>
-import { Icon, JumpIcon } from 'tdesign-icons-vue'
+import { DialogPlugin } from 'tdesign-vue'
+import { JumpIcon, NotificationErrorIcon, Setting1Icon, SystemSettingIcon, FillColor1Icon, ComponentLayoutIcon, LogoutIcon } from 'tdesign-icons-vue'
 
 export default {
 
-  components: { Icon },
+  components: {
+    NotificationErrorIcon,
+    Setting1Icon,
+    SystemSettingIcon,
+    FillColor1Icon,
+    ComponentLayoutIcon,
+    LogoutIcon
+  },
 
   data () {
     return {
@@ -71,7 +79,7 @@ export default {
 
   methods: {
     handleLogout () {
-      const dialog = this.$dialog.confirm({
+      const dialog = DialogPlugin.confirm({
         header: '提示',
         body: '确定退出登录么？',
         theme: 'info',

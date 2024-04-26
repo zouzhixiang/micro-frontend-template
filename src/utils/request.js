@@ -39,10 +39,13 @@ service.interceptors.response.use(
       switch (error.response.status) {
         // token失效
         case 401:
-          MessagePlugin.error('用户登录已过期')
-          store.dispatch('app/clearToken').then(() => {
-            router.replace({ name: 'login' })
-          })
+          if (error.response.data.code === '0102') {
+            store.dispatch('app/clearToken').then(() => {
+              router.replace({ name: 'login' })
+            })
+          } else {
+            MessagePlugin.error(error.response.data.message)
+          }
           break
         // 后台异常
         case 500:

@@ -3,17 +3,15 @@ import App from './App.vue'
 import { router, createRouter, loadPublicRoutes, loadAsyncRoutes } from './router'
 import store from './store'
 import axios from 'axios'
-import TDesign from 'tdesign-vue'
 import 'normalize.css/normalize.css'
 import './style/index.scss'
-import 'tdesign-vue/es/style/index.css'
 import WujieVue from 'wujie-vue2'
 import modules from './modules'
 import lifecycles from './lifecycle'
 
 import '../mock'
 
-Vue.use(TDesign).use(WujieVue)
+Vue.use(WujieVue)
 Vue.config.productionTip = false
 
 axios.get('./env.json').then(({ data: { name, menuRootCode, baseUrl, moduleApps, mainApp } }) => {

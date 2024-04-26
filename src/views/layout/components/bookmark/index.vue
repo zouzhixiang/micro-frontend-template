@@ -5,18 +5,18 @@
     </t-tabs>
     <t-dropdown :options="options" :maxHeight="500" :maxColumnWidth="140" @click="clickDropdown">
       <div class="t-tabs__btn--right t-tabs__btn t-size-m">
-        <icon name="menu-application" />
+        <menu-application-icon />
       </div>
     </t-dropdown>
   </div>
 </template>
 
 <script>
-import { Icon } from 'tdesign-icons-vue'
+import { MenuApplicationIcon } from 'tdesign-icons-vue'
 
 export default {
 
-  components: { Icon },
+  components: { MenuApplicationIcon },
 
   data () {
     return {

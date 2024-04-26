@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <t-card title="登录" shadow>
-      <t-form :data="formData" ref="form" @reset="onReset" @submit="onSubmit" :colon="true" :labelWidth="0">
-        <t-form-item name="account">
-          <t-input clearable v-model="formData.username" placeholder="请输入账户名">
-            <t-icon name="desktop" slot="prefix-icon"></t-icon>
+    <t-card :title="title" subtitle="登录" shadow>
+      <t-form :data="formData" ref="form" @submit="onSubmit" :colon="true" :labelWidth="0">
+        <t-form-item name="username" :rules="[{ required: true, message: '用户名不能为空' }]">
+          <t-input clearable v-model="formData.username" placeholder="请输入用户名" autocomplete="off">
+            <desktop-icon slot="prefix-icon" />
           </t-input>
         </t-form-item>
-        <t-form-item name="password">
-          <t-input type="password" clearable v-model="formData.password" placeholder="请输入密码">
-            <t-icon name="lock-on" slot="prefix-icon"></t-icon>
+        <t-form-item name="password" :rules="[{ required: true, message: '密码不能为空' }]">
+          <t-input type="password" clearable v-model="formData.password" placeholder="请输入密码" autocomplete="off">
+            <lock-on-icon slot="prefix-icon" />
           </t-input>
         </t-form-item>
         <t-form-item>
@@ -21,9 +21,15 @@
 </template>
 
 <script>
+import { DesktopIcon, LockOnIcon } from 'tdesign-icons-vue'
+
 export default {
+
+  components: { DesktopIcon, LockOnIcon },
+
   data () {
     return {
+      title: this.name,
       loading: false,
       formData: {
         username: '',
@@ -33,24 +39,14 @@ export default {
   },
 
   methods: {
-    onReset () {
-      this.$message.success('重置成功')
-    },
-    onSubmit ({ validateResult, firstError }) {
-      this.loading = true
+    onSubmit ({ validateResult }) {
       if (validateResult === true) {
-        this.$store
-          .dispatch('app/login', this.formData)
-          .then(() => {
-            this.loading = false
-            this.$router.replace({ path: '/' })
-          })
-          .catch(() => {
-            this.loading = false
-          })
-      } else {
-        console.log('Errors: ', validateResult)
-        this.$message.warning(firstError)
+        this.$store.dispatch('app/login', this.formData).then(() => {
+          this.loading = false
+          this.$router.replace({ path: '/' })
+        }).catch(() => {
+          this.loading = false
+        })
       }
     }
   }
@@ -64,5 +60,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(120deg, #ebedfa 0%, #c3cdf0 100%);
+}
+.t-card {
+  width: 300px;
 }
 </style>

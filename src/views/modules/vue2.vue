@@ -24,6 +24,14 @@ export default {
           cssBeforeLoaders: [
             // 强制使子应用body定位是relative
             { content: 'body{position: relative !important}' }
+          ],
+          jsBeforeLoaders: [
+            { content: 'window.axios = window.parent.axios' },
+            { content: 'window.jsencrypt = window.parent.jsencrypt' },
+            { content: 'window.lodash = window.parent.lodash' },
+            { content: 'window.Vue = window.parent.Vue' },
+            { content: 'window.VueRouter = window.parent.VueRouter' },
+            { content: 'window.Vuex = window.parent.Vuex' }
           ]
         }
       ]
