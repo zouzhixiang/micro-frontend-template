@@ -4,6 +4,7 @@ import { router, createRouter, loadPublicRoutes, loadAsyncRoutes } from './route
 import store from './store'
 import axios from 'axios'
 import 'normalize.css/normalize.css'
+import 'tdesign-vue/es/style/index.css'
 import './style/index.scss'
 import WujieVue from 'wujie-vue2'
 import modules from './modules'
