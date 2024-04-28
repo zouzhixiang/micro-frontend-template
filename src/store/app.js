@@ -195,22 +195,20 @@ const actions = {
     }
 
     return new Promise((resolve, reject) => {
-      login(params)
-        .then(async () => {
-          await dispatch('getMenu')
-          resolve()
-        })
-        .catch(error => {
-          reject(error)
-        })
+      login(params).then(async () => {
+        await dispatch('getMenu')
+        resolve()
+      }).catch(error => {
+        reject(error)
+      })
     })
   },
   // 获取用户权限菜单
-  getMenu ({ commit, dispatch }) {
-    return new Promise((resolve, reject) => {
-      dispatch('getUserInfo')
-      dispatch('getConfigProp')
+  async getMenu ({ state, commit, dispatch }) {
+    if (!state.userInfo) await dispatch('getUserInfo')
+    if (!state.platformConfig) await dispatch('getConfigProp')
 
+    return new Promise((resolve, reject) => {
       if (Vue.prototype.menuRootCode) {
         getAsyncRoutes().then(response => {
           if (response?.data?.menu?.length) {

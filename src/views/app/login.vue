@@ -41,6 +41,7 @@ export default {
   methods: {
     onSubmit ({ validateResult }) {
       if (validateResult === true) {
+        this.loading = true
         this.$store.dispatch('app/login', this.formData).then(() => {
           this.loading = false
           this.$router.replace({ path: '/' })
