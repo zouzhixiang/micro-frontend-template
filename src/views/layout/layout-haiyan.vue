@@ -68,26 +68,46 @@ export default {
   }
   .t-row {
     flex: 1;
+    flex-wrap: nowrap;
+  }
+  .t-col:nth-child(2) {
+    overflow: hidden;
   }
   .t-col:last-child {
     height: var(--td-comp-size-xxl);
-    background: linear-gradient(to bottom, var(--td-brand-color-10), var(--td-brand-color-12));
+    background: linear-gradient(
+      to bottom,
+      var(--td-brand-color-10),
+      var(--td-brand-color-12)
+    );
   }
 
   // head-menu
   .t-head-menu {
-    background: linear-gradient(to bottom, var(--td-brand-color-10), var(--td-brand-color-12));
+    overflow-x: auto;
+    background: linear-gradient(
+      to bottom,
+      var(--td-brand-color-10),
+      var(--td-brand-color-12)
+    );
   }
   .t-head-menu__inner {
     height: var(--td-comp-size-xxl);
   }
-  .t-head-menu__inner .t-menu:first-child {
+  .t-head-menu__inner .t-menu:first-child,
+  .t-head-menu__inner li + li {
     margin-left: 0;
   }
   .t-head-menu .t-menu__item {
     height: 100%;
     color: var(--td-font-white-1);
     font: var(--td-font-body-large);
+  }
+  .t-head-menu .t-menu__item .t-icon {
+    display: none;
+  }
+  .t-head-menu .t-icon + .t-menu__content {
+    margin-left: 0;
   }
   .t-head-menu .t-menu__item.t-is-active {
     background-color: var(--td-brand-color-9);
@@ -100,7 +120,11 @@ export default {
   }
   .t-default-menu {
     flex: 1;
-    background: linear-gradient(to top, var(--td-brand-color-10), var(--td-brand-color-12));
+    background: linear-gradient(
+      to top,
+      var(--td-brand-color-10),
+      var(--td-brand-color-12)
+    );
   }
   .t-default-menu__inner .t-menu > *:not(.t-menu-group):not(:first-child),
   .t-default-menu__inner .t-menu .t-menu-group > *:not(:first-child),
@@ -147,7 +171,11 @@ export default {
     color: var(--td-font-white-1);
     font-weight: 700;
     white-space: nowrap;
-    background: linear-gradient(to bottom, var(--td-brand-color-10), var(--td-brand-color-12));
+    background: linear-gradient(
+      to bottom,
+      var(--td-brand-color-10),
+      var(--td-brand-color-12)
+    );
     transition: width 0.28s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   .menu__operations {
@@ -155,7 +183,11 @@ export default {
     position: relative;
     padding: var(--td-comp-paddingTB-s) var(--td-comp-paddingLR-xxs);
     box-sizing: border-box;
-    background: linear-gradient(to bottom, var(--td-brand-color-10), var(--td-brand-color-12));
+    background: linear-gradient(
+      to bottom,
+      var(--td-brand-color-10),
+      var(--td-brand-color-12)
+    );
   }
   .menu__operations .t-button,
   .menu__operations .t-button:hover {
@@ -167,7 +199,11 @@ export default {
 
   // menu-popup
   .t-menu__popup {
-    background: linear-gradient(to top, var(--td-brand-color-10), var(--td-brand-color-12));
+    background: linear-gradient(
+      to top,
+      var(--td-brand-color-10),
+      var(--td-brand-color-12)
+    );
     border: solid 0.5px var(--td-brand-color-10);
   }
   .t-menu__popup .t-menu__item {

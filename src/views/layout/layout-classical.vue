@@ -62,6 +62,7 @@ export default {
   }
   .t-default-menu {
     flex: 1;
+    overflow: hidden;
     background: var(--td-brand-color-10);
   }
   .t-default-menu__inner .t-menu > *:not(.t-menu-group):not(:first-child),
