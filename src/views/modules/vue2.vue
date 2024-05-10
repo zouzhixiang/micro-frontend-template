@@ -35,15 +35,7 @@ export default {
           ],
           // 修复单例模式下子应用的svg icon失效问题
           appendOrInsertElementHook (element, iframeWindow) {
-            if (
-              element.nodeName === 'svg' &&
-          (element.getAttribute('aria-hidden') === 'true' ||
-            element.style.display === 'none' ||
-            element.style.visibility === 'hidden' ||
-            (element.style.height === '0px' && element.style.width === '0px'))
-            ) {
-              iframeWindow.__WUJIE.styleSheetElements.push(element)
-            }
+            iframeWindow.__WUJIE.styleSheetElements.push(iframeWindow.__SVG_SPRITE__.node)
           }
         }
       ]
